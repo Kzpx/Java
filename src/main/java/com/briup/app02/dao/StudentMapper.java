@@ -17,8 +17,10 @@ public interface StudentMapper {
 	
 	// delete
     void deleteById(Long id);
-
+    
+    //
 	void update(Student student);
 	
 	
+		
 }
