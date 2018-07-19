@@ -6,7 +6,9 @@
  * Copyright (c) 2018, chenzhou1025@126.com All Rights Reserved.
  *
 */
+
 package com.briup.app02.config;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -17,6 +19,7 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 /**
  * ClassName:Swagger2 <br/>
  * Function: TODO ADD FUNCTION. <br/>
@@ -42,9 +45,9 @@ public class Swagger2 {
 	
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder()
-				.title("Kzpx 实训API")
-				.description("Kzpx Blog App02，https://kzpx.github.io/")
-				.termsOfServiceUrl("https://kzpx.github.io/")
+				.title("智慧校园，课调系统API")
+				.description("hello world，http://www.briup.com")
+				.termsOfServiceUrl("http://www.briup.com")
 				.version("1.0")
 				.build();
 	}

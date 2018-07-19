@@ -1,9 +1,10 @@
 package com.briup.app02.bean;
 
 public class Student {
-	public Long id;
-	public String name;
-	public Integer age;
+	private Long id;
+	private String name;
+	private Integer age;
+	
 	public Long getId() {
 		return id;
 	}
@@ -23,5 +24,4 @@ public class Student {
 		this.age = age;
 	}
 	
-
 }

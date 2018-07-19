@@ -7,17 +7,17 @@ import org.springframework.stereotype.Service;
 
 import com.briup.app02.bean.Student;
 import com.briup.app02.dao.StudentMapper;
-import com.briup.app02.service.IStudentsService;
-@Service
-public class StudentServiceImpl implements IStudentsService {
+import com.briup.app02.service.IStudentService;
 
+@Service
+public class StudentServiceImpl implements IStudentService {
 	@Autowired
 	private StudentMapper studentMapper;
 	
 	
 	@Override
 	public List<Student> findAll() throws Exception {
-		// 调用studentsMapper查询所有学生
+		//调用studentMapper查询所有学生
 		List<Student> list = studentMapper.findAll();
 		
 		return list;
@@ -26,31 +26,47 @@ public class StudentServiceImpl implements IStudentsService {
 
 	@Override
 	public Student findById(long id) throws Exception {
-		// TODO Auto-generated method stub
 		return studentMapper.findById(id);
 	}
-	
+
+
 	@Override
 	public void save(Student student) throws Exception {
 		studentMapper.save(student);
 	}
-	
+
+
 	@Override
-    public void update(Student student) throws Exception {
+	public void update(Student student) throws Exception {
 		studentMapper.update(student);
 	}
-	
+
+
 	@Override
-	public void deleteById(Long id) throws Exception {
+	public void deleteById(long id) throws Exception {
+		//1. 通过id查找
 		Student student = studentMapper.findById(id);
-		if(student!=null)
-		{
+		//2. 如果该学生存在，执行删除操作，如果该学生不存在，抛出异常
+		if(student!=null){
 			studentMapper.deleteById(id);
-		}
-		else 
-		{
+		} else {
 			throw new Exception("要删除的学生不存在");
 		}
 		
+		
 	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

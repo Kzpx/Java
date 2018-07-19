@@ -1,10 +1,15 @@
-package com.briup.app02.bean;
+package com.briup.app02.vm;
 
-public class questionnaire {
+import com.briup.app02.bean.Grade;
+import com.briup.app02.bean.User;
+
+public class ClazzVM {
 	private Long id;
 	private String name;
 	private String description;
-	private String createdate;
+	private Grade grade;	//年级
+	private User user; 		//班主任
+	
 	public Long getId() {
 		return id;
 	}
@@ -23,12 +28,17 @@ public class questionnaire {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public String getCreatedate() {
-		return createdate;
+	public Grade getGrade() {
+		return grade;
 	}
-	public void setCreatedate(String createdate) {
-		this.createdate = createdate;
+	public void setGrade(Grade grade) {
+		this.grade = grade;
+	}
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
 	}
 	
-
 }

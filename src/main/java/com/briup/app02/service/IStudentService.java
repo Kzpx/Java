@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.briup.app02.bean.Student;
 
-public interface IStudentsService {
+public interface IStudentService {
 	
 	List<Student> findAll() throws Exception;
 	
@@ -13,6 +13,6 @@ public interface IStudentsService {
 	void save(Student student) throws Exception;
 	
 	void update(Student student) throws Exception;
-
-	void deleteById(Long id) throws Exception;
+	
+	void deleteById(long id) throws Exception;
 }

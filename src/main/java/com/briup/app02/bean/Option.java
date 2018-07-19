@@ -1,6 +1,6 @@
 package com.briup.app02.bean;
 
-public class option {
+public class Option {
 	private Long id;
 	private String label;
 	private String content;
@@ -36,6 +36,4 @@ public class option {
 	public void setQuestion_id(Long question_id) {
 		this.question_id = question_id;
 	}
-	
-
 }

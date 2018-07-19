@@ -6,6 +6,7 @@ public class User {
 	private String gender;
 	private String birth;
 	private String hiredate;
+	
 	public Long getId() {
 		return id;
 	}
@@ -37,5 +38,4 @@ public class User {
 		this.hiredate = hiredate;
 	}
 	
-
 }

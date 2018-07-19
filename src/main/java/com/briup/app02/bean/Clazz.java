@@ -5,7 +5,8 @@ public class Clazz {
 	private String name;
 	private String description;
 	private Long grade_id;
-	private String user_id;
+	private Long user_id;
+	
 	public Long getId() {
 		return id;
 	}
@@ -30,11 +31,12 @@ public class Clazz {
 	public void setGrade_id(Long grade_id) {
 		this.grade_id = grade_id;
 	}
-	public String getUser_id() {
+	public Long getUser_id() {
 		return user_id;
 	}
-	public void setUser_id(String user_id) {
+	public void setUser_id(Long user_id) {
 		this.user_id = user_id;
 	}
+	
 	
 }

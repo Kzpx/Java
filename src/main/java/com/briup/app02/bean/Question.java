@@ -1,9 +1,20 @@
 package com.briup.app02.bean;
 
-public class question {
+public class Question {
 	private Long id;
 	private String name;
 	private String questiontype;
+	public Question() {
+		
+	}
+	public Question(Long id, String name, String questiontype) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.questiontype = questiontype;
+	}
+
+
 	public Long getId() {
 		return id;
 	}
@@ -23,5 +34,4 @@ public class question {
 		this.questiontype = questiontype;
 	}
 	
-
 }
